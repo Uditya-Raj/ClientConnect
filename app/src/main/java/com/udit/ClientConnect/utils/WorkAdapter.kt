@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.udit.ClientConnect.databinding.ItemViewWorksBinding
 
 
-class WorksAdapter: RecyclerView.Adapter<WorksAdapter.WorksViewHolder>() {
+class WorksAdapter(val onUnassignedButtonClicked: (Work) -> Unit) : RecyclerView.Adapter<WorksAdapter.WorksViewHolder>() {
     class WorksViewHolder(val binding: ItemViewWorksBinding):ViewHolder(binding.root)
     val diffUtil = object:DiffUtil.ItemCallback<Work>(){
         override fun areItemsTheSame(oldItem: Work, newItem: Work): Boolean {
@@ -55,6 +55,9 @@ class WorksAdapter: RecyclerView.Adapter<WorksAdapter.WorksViewHolder>() {
                  isAnyExpanded(position)
                  works.expanded = !works.expanded
                  notifyItemChanged(position,0)
+             }
+             btnWorkDone.setOnClickListener {
+                 onUnassignedButtonClicked(works)
              }
          }
     }
