@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EmployeesFragment">
+
+
+
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/tbEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:title="Employee"
+        app:menu="@menu/toolbar_menu"
+        app:titleTextColor="@color/white"
+        android:background="@color/HardBlue"
+        android:paddingTop="40dp"
+
+        />
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/rv_Employees"
+           android:layout_width="0dp"
+           android:layout_height="0dp"
+           app:layout_constraintTop_toBottomOf="@+id/tbEmployee"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           />
+
+
+    <Button
+        android:id="@+id/btn_employee_frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Go to work fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

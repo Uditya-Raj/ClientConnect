@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "452108731915",
+    "firebase_url": "https://todoapp-9c0dc-default-rtdb.firebaseio.com",
+    "project_id": "todoapp-9c0dc",
+    "storage_bucket": "todoapp-9c0dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452108731915:android:5c3ac252994e02c95a690e",
+        "android_client_info": {
+          "package_name": "com.example.todoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZXnXjwZSRCxcFQh0wMu24wbkXO_5dfc0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452108731915:android:a581f838c7b135ee5a690e",
+        "android_client_info": {
+          "package_name": "com.udit.ClientConnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZXnXjwZSRCxcFQh0wMu24wbkXO_5dfc0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

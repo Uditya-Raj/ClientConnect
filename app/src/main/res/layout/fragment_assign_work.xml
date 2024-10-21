@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="50dp"
+    tools:context=".AssignWorkFragment">
+
+     <androidx.appcompat.widget.Toolbar
+         android:id="@+id/assignWork_frag"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/HardBlue"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:navigationIcon="@drawable/baseline_arrow_back_24"
+         app:title="Assign Work"
+         app:titleTextColor="@color/white"
+         android:paddingTop="40dp"
+         />
+
+
+       <EditText
+           android:id="@+id/etTitle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:hint="@string/work_title"
+           android:layout_marginTop="40dp"
+           android:paddingStart="15dp"
+           android:layout_marginStart="20dp"
+           android:layout_marginEnd="20dp"
+           app:layout_constraintTop_toBottomOf="@+id/assignWork_frag"
+           />
+
+       <LinearLayout
+           android:id="@+id/layout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@id/etTitle"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:orientation="horizontal"
+           android:layout_marginTop="40dp"
+           android:layout_marginStart="20dp"
+           android:layout_marginEnd="20dp">
+
+           <TextView
+               android:id="@+id/tvDate"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Last_date:"
+               android:textColor="@color/HardBlue"
+               android:textSize="@dimen/_15sdp"
+               android:textStyle="bold"
+               />
+           <ImageView
+               android:id="@+id/Date_picker"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="@dimen/_5sdp"
+               android:src="@drawable/baseline_calendar_month_24"/>
+
+       </LinearLayout>
+
+    <EditText
+        android:id="@+id/work_desc"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:layout_constraintTop_toBottomOf="@+id/layout"
+        android:hint="@string/work_description"
+        android:gravity="start"
+        android:paddingStart="10dp"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        app:tint="#ffffff"
+        android:backgroundTint="@color/HardBlue"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

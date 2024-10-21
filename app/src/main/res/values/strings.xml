@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">TodoApp</string>
+    <string name="welcome_to_assigntodo">Welcome to AssignTodo</string>
+    <string name="sign_up_please">Sign Up Please</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="select_user_type">Select User Type</string>
+    <string name="boss">Boss</string>
+    <string name="employee">Employee</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="confirm_your_password">Confirm Your Password</string>
+    <string name="register">Register</string>
+    <string name="already_hava_an_account">Already hava an account ?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="loading">Loading....</string>
+    <string name="login_please">Login Please</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">Logout</string>
+    <string name="account_created">Account Created</string>
+    <string name="please_verify_your_email">Please verify your email</string>
+    <string name="ok">OK</string>
+    <string name="back_to_sign_in">Back to Sign In</string>
+    <string name="todo">TODO</string>
+    <string name="work_title">Work Title</string>
+    <string name="last_date">Last Date</string>
+    <string name="work_description">Work Description..</string>
+    <string name="_12_12_2024">12-12-2024</string>
+    <string name="pending">Pending</string>
+    <string name="work_decription">Work Decription :-</string>
+    <string name="this_is_the_description_of_the_work">This is the description of the work</string>
+    <string name="unassigned">Unassigned</string>
+</resources>
