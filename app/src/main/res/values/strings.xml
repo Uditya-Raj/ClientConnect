@@ -35,4 +35,7 @@
     <string name="work_decription">Work Decription :-</string>
     <string name="this_is_the_description_of_the_work">This is the description of the work</string>
     <string name="unassigned">Unassigned</string>
+    <string name="completed">Completed</string>
+    <string name="starting">Starting</string>
+    <string name="start">Start</string>
 </resources>

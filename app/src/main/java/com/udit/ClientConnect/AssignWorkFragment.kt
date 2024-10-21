@@ -49,8 +49,9 @@ class AssignWorkFragment : Fragment() {
             val empId = employeeData.EmployeeDetails.userId
             val bossId = FirebaseAuth.getInstance().currentUser?.uid
             val workId = bossId+empId
-            val work = Work(workTitle=workTitle, workDescription = WorkDescription, workLastDate = lastdate, workStatus = "1")
-            FirebaseDatabase.getInstance().getReference("Works").child(workId).push().setValue(work).addOnSuccessListener {
+            val randomId =(1..20).map{(('A'..'Z')+('a'..'z')+('0'..'9')).random()}.joinToString("")
+            val work = Work(workId=randomId,workTitle=workTitle, workDescription = WorkDescription, workLastDate = lastdate, workStatus = "1")
+            FirebaseDatabase.getInstance().getReference("Works").child(workId).child(randomId).setValue(work).addOnSuccessListener {
                 Utils.hideDialog()
                 Toast.makeText(requireContext(),"Work has been Assigned to ${employeeData.EmployeeDetails.userName}",Toast.LENGTH_SHORT).show()
                 val action = AssignWorkFragmentDirections.actionAssignWorkFragmentToWorksFragment(employeeData.EmployeeDetails)
